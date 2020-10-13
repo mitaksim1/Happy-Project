@@ -1,0 +1,15 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    color: #FFF;
+    background: #ebf2eb;
+}
+
+/* Par défaut l'input, le button et le textarea prennent pas automatiquement les polices définis globalement dans le body*/
+body, input, button, textarea {
+    font: 600 18px Nunito, sans-serif;
+}
