@@ -26,6 +26,7 @@ export default {
     // Creates an orphanage
     async create(request: Request, response: Response) {
         // console.log(request.body);
+        console.log(request.files);
     const {
         name,
         latitude,
@@ -39,6 +40,13 @@ export default {
     // Which schema model we want to use
     const orphanagesRepository = getRepository(Orphanage);
 
+    // Get images from request.files
+    const requestImages = request.files as Express.Multer.File[];
+
+    const images = requestImages.map(image => {
+        return { path: image.filename }
+    })
+
     // Creates an orphanage
     const orphanage = orphanagesRepository.create({
         name,
@@ -48,6 +56,7 @@ export default {
         instructions,
         opening_hours,
         open_on_weekends,
+        images
     });
 
     // Saves the created orphanage into the db
