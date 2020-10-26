@@ -14,6 +14,7 @@ export default function CreateOrphanage() {
   const [about, setAbout] = useState('');
   const [instructions, setInstructions] = useState('');
   const [opening_hours, setOpeningHours] = useState('');
+  const [open_on_weekends, setOpenOnWeekends] = useState(true);
 
   function handleMapClick(event: LeafletMouseEvent) {
     // Getting latitude and longitude in the map 
@@ -126,8 +127,21 @@ function handleSubmit(event: FormEvent) {
               <label htmlFor="open_on_weekends">Ouvert le weekend</label>
 
               <div className="button-select">
-                <button type="button" className="active">Oui</button>
-                <button type="button">Non</button>
+                <button 
+                  type="button" 
+                  className={open_on_weekends ? "active" : ''}
+                  onClick={() => setOpenOnWeekends(true)}
+                >
+                    Oui
+                </button>
+
+                <button 
+                  type="button"
+                  className={!open_on_weekends ? "active" : ''}
+                  onClick={() => setOpenOnWeekends(false)}
+                >
+                    Non
+                </button>
               </div>
             </div>
           </fieldset>
