@@ -41,11 +41,16 @@ export default function CreateOrphanage() {
               />
 
               {/* Condition to display marker icon in the map */}
-              { position.latitude !== 0 
-                ? <Marker interactive={false} icon={mapIcon} position={[position.latitude, position.longitude]} />
-                : null
-              }
-        
+              { position.latitude !== 0 && (
+                <Marker 
+                interactive={false} 
+                icon={mapIcon} 
+                position={[
+                  position.latitude, 
+                  position.longitude
+                ]} 
+                />
+              )} 
             </Map>
 
             <div className="input-block">
