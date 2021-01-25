@@ -1,6 +1,6 @@
 ## 💻 Project
 
-![Happy](./web/src/images/homepage.jpg)
+![homepage](https://user-images.githubusercontent.com/53954134/105760828-95327100-5f52-11eb-9f36-eba8b11f8eb6.JPG)
 
 This project was developed on the Next Level Week (NLW) event by [Rocketseat](www.rocketseat.com.br).
 
