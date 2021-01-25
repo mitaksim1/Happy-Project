@@ -40,8 +40,6 @@ $ yarn typeorm migration:run
 
 # To finish, run the api service
 $ yarn start
-
-# Well done, project is started!
 ```
 
 ### Web
@@ -62,6 +60,6 @@ $ yarn start
 
 ## 📋 Licence
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+This project is licensed under the MIT License. See [LICENSE](LICENSE.md) fore more details.
 
 ---
