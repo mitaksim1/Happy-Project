@@ -1,8 +1,6 @@
-<h1 align="center">
-    <img alt="Photo de l'application" title="Happy" src="./web/src/images/homepage.jpg" width="500px" />
-</h1>
-
 ## 💻 Project
+
+![Happy](./web/src/images/homepage.jpg)
 
 This project was developed on the Next Level Week (NLW) event by [Rocketseat](www.rocketseat.com.br).
 
@@ -56,8 +54,6 @@ $ cd web
 
 # Install the dependencies
 $ yarn install
-
-# Be sure the file 'src/services/api.ts' have the IP to your API
 
 # Start the client
 $ yarn start
